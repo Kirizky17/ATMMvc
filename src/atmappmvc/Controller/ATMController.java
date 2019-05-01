@@ -48,7 +48,7 @@ public class ATMController {
 //        return this.accountController;
 //    }
     
-    public int UserChoice(){
+    public int UserChoice() throws InterruptedException{
         int choice;
         this.view.aTMView.diplayATMMenu();
         choice = scanner.nextInt();
@@ -62,14 +62,10 @@ public class ATMController {
                 break;
             }
             case 3: {
-                this.transactionController.withdrawal();
+                this.transactionController.deposit();
                 break;
             }
             case 4: {
-                this.transactionController.withdrawal();
-                break;
-            }
-            case 5: {
                 break;
             }
         }

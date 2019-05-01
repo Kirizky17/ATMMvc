@@ -50,6 +50,10 @@ public class Account {
        totalBalance -= amount;
    }
    
+   public void deposit(double amount){
+       totalBalance += amount;
+   }
+   
    public boolean isBalanceAvaiable(double amount){
        if(amount <= availableBalance){
            return true;

@@ -46,4 +46,19 @@ public class TransactionView {
     public void displayInsufficientBalance(){
         System.out.print("\nInsufficient Balance.");
     }
+    
+    public void displayPromptForDepositAmount(){
+        System.out.print("\nPlease enter a deposit amount in DOLLARS (or 0 to cancel): ");
+    }
+    
+    public void displayInsertEnvelope(int amount){
+        System.out.print("Please insert a deposit envelope containing ");
+        System.out.println(convertToDollar(amount));
+    }
+    
+    public void displayEnvelopeInserted(){
+        System.out.print("Your envelope has been received.\n" +
+                   "\n" +"NOTE: The money just deposited will not be available until "
+                   + "we verify the amount of any enclosed cash and your checks clear.");
+    }
 }

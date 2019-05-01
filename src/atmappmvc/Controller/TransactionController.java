@@ -67,4 +67,18 @@ public class TransactionController {
         }
     }
     
+    public void deposit() throws InterruptedException{
+        TransactionView view = this.parentContoller.view.transactionView;
+        view.displayPromptForDepositAmount();
+        
+        int amount = parentContoller.scanner.nextInt(); // get user input through keypad
+        
+        if (amount != 0){
+            view.displayInsertEnvelope(amount);
+            this.parentContoller.getATMModel().getCurrentAccount().deposit(amount);
+            Thread.sleep(2000);
+            view.displayEnvelopeInserted();
+        }        
+    }
+    
 }

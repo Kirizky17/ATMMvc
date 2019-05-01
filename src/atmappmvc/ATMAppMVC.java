@@ -17,7 +17,7 @@ import atmappmvc.View.MainView;
  */
 public class ATMAppMVC {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ATMModel model;
         MainView view;
         ATMController controller;       

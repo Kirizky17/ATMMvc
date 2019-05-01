@@ -24,8 +24,7 @@ public class ATMView {
       System.out.println("1 - View my balance");
       System.out.println("2 - Withdraw cash");
       System.out.println("3 - Deposit funds");
-      System.out.println("4 - Transfer");
-      System.out.println("5 - Exit\n");
+      System.out.println("4 - Exit\n");
       System.out.print("Enter a choice: ");
     }
     
