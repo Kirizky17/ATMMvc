@@ -34,7 +34,7 @@ public class ATMAppMVC {
 
             do{
                 choice  = controller.UserChoice();
-            }while (choice != 5);
+            }while (choice != 4);
         }
 
     }
